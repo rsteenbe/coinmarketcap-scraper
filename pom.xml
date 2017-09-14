@@ -8,15 +8,6 @@
     <artifactId>coinmarketcap-scraper</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-<<<<<<< HEAD
-        <dependencies>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-api</artifactId>
-                <version>1.7.25</version>
-            </dependency>
-        </dependencies>
-=======
     <dependencies>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -27,6 +18,11 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
             <version>1.7.25</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jsoniter</groupId>
+            <artifactId>jsoniter</artifactId>
+            <version>0.9.15</version>
         </dependency>
     </dependencies>
 
@@ -57,5 +53,4 @@
             </plugin>
         </plugins>
     </build>
->>>>>>> b4a6e6661c4d2b2f8fe7be5152676fcfa1dcedbd
 </project>
