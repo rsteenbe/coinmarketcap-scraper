@@ -29,7 +29,8 @@ public class Main {
         String coinMarketCapUrl = null;
         String storageFolder = null;
         try {
-            input = new FileInputStream("coinmarketcap-scraper.properties");
+            input = Main.class.getClassLoader().getResourceAsStream("coinmarketcap-scraper.properties");
+
             properties.load(input);
             coinMarketCapUrl = properties.getProperty("coinmarketcap-scraper.coinMarketCapApi");
             storageFolder = properties.getProperty("coinmarketcap-scraper.storageFolder");

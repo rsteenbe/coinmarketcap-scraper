@@ -56,6 +56,6 @@ In the command line of the Raspberry Pi, type in the following command:
 `crontab -e`
 
 When the JAR-file is placed in the `/tmp` folder, add the following line at the bottom of this file:
-`*/5 * * * * sudo java -jar /tmp/coinmarketcap-scraper-${project.version}-jar-with-dependencies.jar >/dev/null 2>/dev/null`
+`*/5 * * * * sudo java -jar /tmp/coinmarketcap-scraper-${project.version}-jar-with-dependencies.jar`
 
 Feel free to run the JAR-file from another path.

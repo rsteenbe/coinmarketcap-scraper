@@ -28,7 +28,7 @@ public class Coins {
         InputStream input = null;
         String coinProperty = null;
         try {
-            input = new FileInputStream("coinmarketcap-scraper.properties");
+            input = input = Coins.class.getClassLoader().getResourceAsStream("coinmarketcap-scraper.properties");
             properties.load(input);
             coinProperty = properties.getProperty("coins");
         } catch (IOException ex) {
