@@ -50,7 +50,7 @@ In the `target` folder of the project you will find the `coinmarketcap-scraper-$
 Replace `${project.version}` by the version that is used in the filename of the JAR-file.
 
 ## Crontab on Raspberry Pi 3
-Copy the JAR-file `coinmarketcap-scraper-${project.version}-jar-with-dependencies.jar` together with the `coinmarketcap-scraper.properties` from the Windows machine to the Raspberry Pi and place it in the `tmp` folder.
+Copy the JAR-file `coinmarketcap-scraper-${project.version}-jar-with-dependencies.jar` from the Windows machine to the Raspberry Pi and place it in the `tmp` folder.
 
 In the command line of the Raspberry Pi, type in the following command:
 `crontab -e`
