@@ -44,18 +44,15 @@ The following properties are added in `coinmarketcap-scraper.properties`:
 
 ## Installation
 ## Maven on Windows 7
-Be sure that Maven is installed correctly on your PC. Use Maven to compile and package the tool by using the following commands in the Windows command line: `mvn clean install`.
-
-In the `target` folder of the project you will find the `coinmarketcap-scraper-${project.version}-jar-with-dependencies.jar` which will be running in a Cronjob on the Raspberry Pi.
-Replace `${project.version}` by the version that is used in the filename of the JAR-file.
+Be sure that Maven is installed correctly on your machine. Use Maven to compile and package the tool by using the following commands in the Windows command line: `mvn clean install`.
 
 ## Crontab on Raspberry Pi 3
-Copy the JAR-file `coinmarketcap-scraper-${project.version}-jar-with-dependencies.jar` from the Windows machine to the Raspberry Pi and place it in the `/tmp` folder.
+Copy the JAR-file `/target/coinmarketcap-scraper.jar` from the Windows machine to the Raspberry Pi and place it in the `/tmp` folder.
 
 In the command line of the Raspberry Pi, type in the following command:
 `crontab -e`
 
 When the JAR-file is placed in the `/tmp` folder, add the following line at the bottom of this file:
-`*/5 * * * * sudo java -jar /tmp/coinmarketcap-scraper-${project.version}-jar-with-dependencies.jar`
+`*/5 * * * * sudo java -jar /tmp/coinmarketcap-scraper.jar`
 
 Feel free to run the JAR-file from another path.
